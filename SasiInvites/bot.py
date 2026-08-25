@@ -1,3 +1,7 @@
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
 from keep_alive import keep_alive
 import os
 import discord
