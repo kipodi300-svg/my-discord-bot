@@ -185,6 +185,6 @@ async def leaderboard_cmd(ctx):
         await ctx.send(embed=embed)
     except discord.Forbidden:
         await ctx.send("❌ לבוט אין הרשאות לצפות בהזמנות בשרת זה.")
-
+keep_alive()
 bot.run(os.getenv('DISCORD_TOKEN'))
 
