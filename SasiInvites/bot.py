@@ -190,5 +190,8 @@ async def leaderboard_cmd(ctx):
     except discord.Forbidden:
         await ctx.send("❌ לבוט אין הרשאות לצפות בהזמנות בשרת זה.")
 keep_alive()
-bot.run(os.getenv('DISCORD_TOKEN'))
+TOKEN = os.getenv('DISCORD_TOKEN')
+if not TOKEN:
+    raise ValueError("DISCORD_TOKEN is missing!")
+bot.run(TOKEN)
 
