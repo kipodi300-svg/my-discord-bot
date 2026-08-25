@@ -1,5 +1,3 @@
-discord.py
-Flask
 from flask import Flask
 from threading import Thread
 
